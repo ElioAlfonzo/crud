@@ -84,7 +84,7 @@ function App() {
         <div className="col-8">
           <h4 className="text-center">Lista de Tareas</h4>
           {
-            (size(tasks) == 0) ? (
+            (size(tasks) === 0) ? (
 
               <li className="list-group-item">Aun no hay tareas Programadas.</li>
 
@@ -127,7 +127,7 @@ function App() {
               // es in iff de una sola linea
               error && <span className="text-danger">{error}</span>
             }
-            
+
             <input
               type="text"
               className="form-control mb-2"
